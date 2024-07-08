@@ -4,6 +4,7 @@ const isDev = process.env.NODE_ENV === 'production';
 
 const myAxios: AxiosInstance = axios.create({
     baseURL: isDev ? 'http://localhost:8080/api' : 'https://suyumatch.icu/api',
+    withCredentials:true
 });
 
 myAxios.defaults.withCredentials = true; // 配置为true
