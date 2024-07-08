@@ -1,6 +1,6 @@
 import axios, {AxiosInstance} from "axios";
 
-const isDev = process.env.NODE_ENV === 'production';
+const isDev = process.env.NODE_ENV === 'dev';
 
 const myAxios: AxiosInstance = axios.create({
     baseURL: isDev ? 'http://localhost:8080/api' : 'https://suyumatch.icu/api',
